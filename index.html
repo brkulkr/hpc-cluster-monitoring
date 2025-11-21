@@ -105,10 +105,12 @@
   <div class="container">
     <header>
       <h1>HPC Cluster Monitor</h1>
-      <div class="timestamp">Last Updated: 2025-11-21 09:45:26</div>
+      <div class="timestamp">Last Updated: 2025-11-21 09:50:30</div>
     </header>
     
+    <!-- Cluster Status Table -->
     <div class="card">
+      <h2 style="margin-top:0; margin-bottom:1rem; font-size:1.25rem; color:var(--text-primary);">Cluster Status</h2>
       <table>
         <thead>
           <tr>
@@ -116,10 +118,166 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>partition-alpha</td><td>up</td><td>infinite</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>25</td><td>39</td><td>64</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-beta</td><td>up</td><td>infinite</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>26</td><td>38</td><td>64</td><td>Generic GPU</td><td>8</td><td>8</td><td>0</td></tr><tr><td>partition-gamma</td><td>up</td><td>infinite</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>28</td><td>4</td><td>32</td><td>Generic GPU</td><td>7</td><td>7</td><td>0</td></tr><tr><td>partition-delta</td><td>up</td><td>5-00:00:00</td><td>2</td><td><span class="status-dot status-alloc"></span>alloc</td><td>128</td><td>0</td><td>128</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-epsilon</td><td>up</td><td>5-00:00:00</td><td>2</td><td><span class="status-dot status-mix"></span>mix</td><td>109</td><td>83</td><td>192</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-epsilon</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-alloc"></span>alloc</td><td>96</td><td>0</td><td>96</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-zeta</td><td>up</td><td>5-00:00:00</td><td>2</td><td><span class="status-dot status-mix"></span>mix</td><td>109</td><td>83</td><td>192</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-zeta</td><td>up</td><td>5-00:00:00</td><td>3</td><td><span class="status-dot status-alloc"></span>alloc</td><td>224</td><td>0</td><td>224</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-eta</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>9</td><td>23</td><td>32</td><td>1g.6gb</td><td>8</td><td>3</td><td>5</td></tr><tr><td>partition-eta</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>17</td><td>15</td><td>32</td><td>l4.22gb</td><td>4</td><td>4</td><td>0</td></tr><tr><td>partition-theta</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>9</td><td>23</td><td>32</td><td>1g.6gb</td><td>8</td><td>3</td><td>5</td></tr><tr><td>partition-iota</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>17</td><td>15</td><td>32</td><td>l4.22gb</td><td>4</td><td>4</td><td>0</td></tr>
+          <tr><td>partition-alpha</td><td>up</td><td>infinite</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>25</td><td>39</td><td>64</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-beta</td><td>up</td><td>infinite</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>26</td><td>38</td><td>64</td><td>Generic GPU</td><td>8</td><td>8</td><td>0</td></tr><tr><td>partition-gamma</td><td>up</td><td>infinite</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>28</td><td>4</td><td>32</td><td>Generic GPU</td><td>7</td><td>7</td><td>0</td></tr><tr><td>partition-delta</td><td>up</td><td>5-00:00:00</td><td>2</td><td><span class="status-dot status-alloc"></span>alloc</td><td>128</td><td>0</td><td>128</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-epsilon</td><td>up</td><td>5-00:00:00</td><td>2</td><td><span class="status-dot status-mix"></span>mix</td><td>125</td><td>67</td><td>192</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-epsilon</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-alloc"></span>alloc</td><td>96</td><td>0</td><td>96</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-zeta</td><td>up</td><td>5-00:00:00</td><td>2</td><td><span class="status-dot status-mix"></span>mix</td><td>125</td><td>67</td><td>192</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-zeta</td><td>up</td><td>5-00:00:00</td><td>3</td><td><span class="status-dot status-alloc"></span>alloc</td><td>224</td><td>0</td><td>224</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>partition-eta</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>9</td><td>23</td><td>32</td><td>1g.6gb</td><td>8</td><td>3</td><td>5</td></tr><tr><td>partition-eta</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>16</td><td>16</td><td>32</td><td>l4.22gb</td><td>4</td><td>2</td><td>2</td></tr><tr><td>partition-theta</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>9</td><td>23</td><td>32</td><td>1g.6gb</td><td>8</td><td>3</td><td>5</td></tr><tr><td>partition-iota</td><td>up</td><td>5-00:00:00</td><td>1</td><td><span class="status-dot status-mix"></span>mix</td><td>16</td><td>16</td><td>32</td><td>l4.22gb</td><td>4</td><td>2</td><td>2</td></tr>
         </tbody>
       </table>
     </div>
+    
+    <!-- Your Jobs Table -->
+    
+    <div class="card">
+      <h2 style="margin-top:0; margin-bottom:1rem; font-size:1.25rem; color:var(--text-primary);">Your Jobs (12)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Job ID</th>
+            <th>Partition</th>
+            <th>Name</th>
+            <th>State</th>
+            <th>Runtime</th>
+            <th>Nodes</th>
+            <th>CPUs</th>
+            <th>GPUs</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>3768827</td>
+            <td>partition-alpha</td>
+            <td>hpc-monitor</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>13:00:11</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+        
+          <tr>
+            <td>3760897</td>
+            <td>partition-beta</td>
+            <td>exp_worker_single</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>1-10:11:26</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3760896</td>
+            <td>partition-beta</td>
+            <td>exp_worker_single</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>1-10:11:29</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3758983</td>
+            <td>partition-gamma</td>
+            <td>exp_worker_multi</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>1-09:03:52</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3758984</td>
+            <td>partition-gamma</td>
+            <td>exp_worker_multi</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>1-09:03:52</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3758979</td>
+            <td>partition-gamma</td>
+            <td>exp_worker_multi</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>1-19:17:31</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3766500</td>
+            <td>partition-gamma</td>
+            <td>exp_worker_multi</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>11:50:53</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3766501</td>
+            <td>partition-gamma</td>
+            <td>exp_worker_multi</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>11:50:53</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3766502</td>
+            <td>partition-gamma</td>
+            <td>exp_worker_multi</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>11:50:53</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3766503</td>
+            <td>partition-gamma</td>
+            <td>exp_worker_multi</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>11:50:53</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3759139</td>
+            <td>partition-theta</td>
+            <td>exp_worker_single</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>1-17:41:00</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>3759140</td>
+            <td>partition-theta</td>
+            <td>exp_worker_single</td>
+            <td><span class="status-dot status-idle"></span>RUNNING</td>
+            <td>1-17:41:00</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+    
   </div>
 </body>
 </html>
